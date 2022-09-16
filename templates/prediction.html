@@ -1,0 +1,16 @@
+<head>
+    <meta charset="UTF-8">
+    <title>MNIST</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style1.css') }}">
+    
+</head>
+
+
+{% extends 'index.html' %}
+
+{% block content %}
+
+<img class = 'predict_img' src = "static/{{im}}" alt ='No Image found'  width="280" height="250">
+<h2 class ='output'> L'image prédite est le <font color = "Yellow"><b> <u>'{{out}}'</u></b></font></h2>
+
+{% endblock %}
